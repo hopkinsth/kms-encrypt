@@ -9,7 +9,7 @@ import (
 )
 
 func main() {
-	if len(os.Args < 2) {
+	if len(os.Args) < 2 {
 		fmt.Println("You need to supply an ARN and hex value!")
 		return
 	}
