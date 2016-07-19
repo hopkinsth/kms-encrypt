@@ -16,7 +16,7 @@ func main() {
 
 	arn := os.Args[1]
 	plhex := os.Args[2]
-	fmt.Printf("Working with... \n\tarn = %s\n\thex = %s", arn, plhex)
+	fmt.Printf("Working with... \n\tarn = %s\n\thex = %s\n\n", arn, plhex)
 	if arn == "" {
 		fmt.Println("ARN missing; can't encrypt.")
 		return
