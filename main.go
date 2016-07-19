@@ -41,6 +41,6 @@ func main() {
 		return
 	}
 
-	fmt.Printf("encrypted hex value is %s\n", hex.EncodeToString(r.CiphertextBlob))
+	fmt.Printf("encrypted hex value is \n%s\n", hex.EncodeToString(r.CiphertextBlob))
 
 }
