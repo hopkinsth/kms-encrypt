@@ -31,6 +31,7 @@ func main() {
 	k := kms.New(session.New())
 	r, err := k.Encrypt(
 		&kms.EncryptInput{
+			KeyId:     &arn,
 			Plaintext: b,
 		},
 	)
