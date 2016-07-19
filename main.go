@@ -24,7 +24,8 @@ func main() {
 
 	b, err := hex.DecodeString(plhex)
 	if err != nil {
-		fmt.Printf("Err decoding hex; maybe your value is bad? \n Err was %s\n", err)
+		fmt.Printf("Err decoding hex; maybe your value is bad? \nErr was %s\n", err)
+		return
 	}
 
 	k := kms.New(session.New())
